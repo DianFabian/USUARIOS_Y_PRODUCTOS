@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export function Usuarios(){
     const [datosUsuarios, setDatosUsuarios] = useState([]);
     useEffect(()=>{
-        axios.get("https://password-1psv.onrender.com/mostrar/api/motrarUsuarios")
+        axios.get("https://password-1psv.onrender.com/mostrar/api/mostrarUsuarios")
         .then((response)=>{
             setDatosUsuarios(response.data);
         }).catch((err)=>{
